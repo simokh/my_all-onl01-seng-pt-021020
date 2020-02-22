@@ -5,7 +5,7 @@ def my_all?(collection)
   block_return_values = []
   while i < collection.length
     block_return_values << yield(collection[i])
-    i += 1
+    i = 1 + i
   end
 end
 
@@ -15,4 +15,4 @@ end
   else
     true
   end
-end 
+end
